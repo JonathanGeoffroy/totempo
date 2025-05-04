@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtkd37m5xcgw"]
+
+[ext_resource type="PackedScene" uid="uid://8y0oadgli75n" path="res://map.tscn" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://ll6t3dhy10k3" path="res://player.tscn" id="2_tlwt5"]
+
+[node name="World" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_fj7yv")]
+position = Vector2(29, -24)
+
+[node name="Player" parent="." instance=ExtResource("2_tlwt5")]
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, -120)
+offset = Vector2(0, 120)
